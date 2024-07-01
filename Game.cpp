@@ -803,7 +803,7 @@ void Game::passAvailable()
 	// release
 	if (n > 0)
 	{
-		cout << "У вас ще є " << n << " ходів!";
+		cout << "You have " << n << " moves!";
 		isPass = false;
 	}
 	else if (n == 0) isPass = true;
@@ -933,7 +933,7 @@ void Game::choosePlace(string a, int ncol, const int nrow = 2)
 			case '2':
 				if (a[0] == prevVarR[2] or peretvor[0] == prevVarR[2]) 
 				{
-					cout << "Право!";
+					cout << "Right!";
 					if (a[0] == prevVarR[2]) 
 					{
 						prevVarR = a;
